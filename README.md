@@ -13,9 +13,9 @@ This project resourcses is for the OneMilion Dollar TigerGraph Challenge. The pr
 BUSINESS CHALLENGES/PROBLEM STATEMENTS
 
 1. Non-availability of a connected repository or database of all Female STEM graduates, Female STEM Practitioners and Female professionals globally, across all countries.
-2. Non-availability of realtime glocal connected cost effective and mentoring newtork for STEM female graduates and professionals.
-3. Inefficient and lack of connected STEM professinal and graduates to global opportunities across geographical regions.
-4. Lack of efficient and effective connected informative database of SDG goals, opportunities and sub targets for Women across geograhical locations. 
+2. Non-availability of realtime global connected cost effective and mentoring newtork for STEM female graduates and professionals.
+3. Inefficient and lack of connected STEM professionals and graduates to global opportunities across geographical regions.
+4. Lack of efficient and effective connected informative database of SDG goals, opportunities and sub targets for Women across geographical locations. 
 
 
 

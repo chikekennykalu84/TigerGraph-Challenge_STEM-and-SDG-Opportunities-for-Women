@@ -6,14 +6,14 @@ TOPIC :   Creating STEM Opportunities For Women and Enabling Search for UN SDG F
 
 OVERVIEW
 
-This project resourcses is for the OneMilion Dollar TigerGraph Challenge. The project was carried out using the GraphStudio interface and the GSQL thereby obtained as expected. This project is a combination of Creating Global STEM Opportunities for Women and also Enabling effective and efficient Global UN SDG Search for Women.
+This project resourcses are for the OneMilion Dollar TigerGraph Challenge. The project was carried out using the GraphStudio interface and the GSQL thereby obtained as expected. This project is a combination of Creating Global STEM Opportunities for Women and also Enabling effective and efficient Global UN SDG Search for Women.
 
 
 
 BUSINESS CHALLENGES/PROBLEM STATEMENTS
 
 1. Non-availability of a connected repository or database of all Female STEM graduates, Female STEM Practitioners and Female professionals globally, across all countries.
-2. Non-availability of realtime global connected cost effective and mentoring newtork for STEM female graduates and professionals.
+2. Non-availability of real-time global connected cost effective and mentoring network for STEM female graduates and professionals.
 3. Inefficient and lack of connected STEM professionals and graduates to global opportunities across geographical regions.
 4. Lack of efficient and effective connected informative database of SDG goals, opportunities and sub targets for Women across geographical locations. 
 
@@ -40,7 +40,7 @@ D. Applicability:  This work briefly demonstrated TigerGraph's excellent functio
 LIMITATIONS
 
 1.  Lack of updated/consistent SDG and STEM regular data from all countries of the world.
-2.  Unavaiability of measurement and monitoring STEM and SDG targets data from all countries of the World.
+2.  Unavailability of measurement and monitoring STEM and SDG targets data from all countries of the World.
 3.  Extra Skills on more diverse tools to demonstarte more real life application of this connected data network system.
 
 

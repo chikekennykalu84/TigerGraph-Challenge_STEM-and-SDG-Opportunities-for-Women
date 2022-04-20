@@ -21,7 +21,7 @@ BUSINESS CHALLENGES/PROBLEM STATEMENTS
 
 CONCEPT
 
-The brief conceptual methodology applied is to create a network of available data that influences STEM Women Opportunities, SDG Goals and target KPIs, influencing factors, socio demographic factors that can be accessed individually and also connected by geographical location (i.e Country name) and Date (year of data); which can then be used to effectively connect , inform and transform how opportunities are accessed globally and how insights from such data can be efficiently obtained to drive critical decisions and actions for the development of Women globally.
+The brief conceptual methodology applied is the creation of a singular "network" of connected available data that influences STEM Women Opportunities, SDG Goals and target KPIs. Additonally, influencing factors, socio demographic factors that affect STEM and SDG opportunities can be accessed and analysed individually, compratively and also in relation to geographical location (i.e Country name) and Date (year of data). This connected available graphical dataset can then be used to effectively connect, inform and transform how opportunities are accessed globally and how insights from such data can be efficiently obtained to drive critical decisions, collaborate more effectively, efficiently and trigger actions for the development of Women globally and our society.
 
 
 

@@ -43,3 +43,11 @@ LIMITATIONS
 2.  Unavaiability of measurement and monitoring STEM and SDG targets data from all countries of the World.
 3.  Extra Skills on more diverse tools to demonstarte more real life application of this connected data network system.
 
+
+
+GLOSSARY
+
+LIST OF SCHEMA VERTICES
+
+
+

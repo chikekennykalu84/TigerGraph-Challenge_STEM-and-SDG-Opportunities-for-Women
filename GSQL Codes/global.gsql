@@ -1,0 +1,85 @@
+CREATE VERTEX Year(PRIMARY_ID id STRING, date_year DOUBLE, location_country STRING, gdppercapita_USD DOUBLE, population DOUBLE, gross_enrolment_ratio_tertiary_both_sexes_percent FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_male FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_both_sexes FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT, proportion_of_youth_and_adults_with_information_tech_skills_percent FLOAT, number_of_banks DOUBLE, proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT, tri_index FLOAT, nri_index FLOAT, percentage_males FLOAT, percentage_females FLOAT, percentage_age_0_to_14 FLOAT, percentage_age_15_to_27 FLOAT, percentage_age_25_to_64 FLOAT, percentage_age_65_plus FLOAT, education_teaching_level STRING, gender STRING, age STRING, legal_frameworks_that_promote_enforce_and_monitor_gender_equality_percentage_of_achievement FLOAT, stem_percent_female_graduates DOUBLE, occupation_name STRING, occupation_types STRING, access_to_clean_fuels_and_technologies_for_cooking_as_percent_of_population FLOAT, improved_water_source_percent_of_population_with_access FLOAT, improved_sanitation_facilities_as_percent_of_population_with_access FLOAT, access_to_electricity_as_percent_of_population FLOAT, name_of_organization STRING, region STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX Teachers(PRIMARY_ID id STRING, location_country STRING, education_teaching_level STRING, gender STRING, age STRING, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX PercentFemalePopulation(PRIMARY_ID id STRING, percentage_females FLOAT, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX City(PRIMARY_ID id STRING, location_city STRING, date_year DOUBLE, location_country STRING, name_of_ngo STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX StemWomenOrganization(PRIMARY_ID id STRING, stem_women_group STRING, location_country STRING, stem_category STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX NgosForWomen(PRIMARY_ID id STRING, location_country STRING, location_city STRING, name_of_ngo STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX EcosocRegisteredNgosForWomen(PRIMARY_ID id STRING, location_country STRING, name_of_organization STRING, region STRING, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX StemWomenJobsCategory(PRIMARY_ID id STRING, stem_category STRING, stem_women_group STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX SdgGoalAccesstoResources(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, access_to_clean_fuels_and_technologies_for_cooking_as_percent_of_population FLOAT, improved_water_source_percent_of_population_with_access FLOAT, improved_sanitation_facilities_as_percent_of_population_with_access FLOAT, access_to_electricity_as_percent_of_population FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX Countrymultivalues(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, location_city STRING, name_of_ngo STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX SdgGoalPercentEnrollmentRatioTetiary(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, gross_enrolment_ratio_tertiary_both_sexes_percent FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX SdgPercentProportionwithICTSkills(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, proportion_of_youth_and_adults_with_information_tech_skills_percent FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX SdgPercentofLegalsupportforGenderEquality(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, legal_frameworks_that_promote_enforce_and_monitor_gender_equality_percentage_of_achievement FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX SdgProportionwithMobilephones(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_male FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_both_sexes FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX SdgProportionofFemalewithMobilephone(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX Countrysinglevalues(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, gdppercapita_USD DOUBLE, population DOUBLE, number_of_banks DOUBLE, proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT, nri_index FLOAT, tri_index FLOAT, stem_occupations_in_thousands DOUBLE, stem_occupations_as_a_percentage_of_employment DOUBLE, percentage_female_share_of_stem_occupations DOUBLE, stem_tertiary_graduates_in_thousands DOUBLE, tertiary_graduates_of_stem DOUBLE, female_share_of_STEM_tertiary_graduates_in_thousands DOUBLE, percentage_males FLOAT, percentage_females FLOAT, percentage_age_0_to_14 FLOAT, percentage_age_15_to_27 FLOAT, percentage_age_25_to_64 FLOAT, percentage_age_65_plus FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX SdgeLegislativesupportGenderequalityWomenempower(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX StemPercentFemaleTetiaryGrads(PRIMARY_ID id STRING, stem_percent_female_graduates DOUBLE, location_country STRING, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX StemJobsdistribution(PRIMARY_ID id STRING, location_country STRING, stem_occupations_in_thousands DOUBLE, stem_occupations_as_a_percentage_of_employment DOUBLE, percentage_female_share_of_stem_occupations DOUBLE, stem_tertiary_graduates_in_thousands DOUBLE, female_share_of_STEM_tertiary_graduates_in_thousands DOUBLE, tertiary_graduates_of_stem DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX PercentofStemFemaleJobs(PRIMARY_ID id STRING, percentage_female_share_of_stem_occupations DOUBLE, location_country STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX CountryDemographics(PRIMARY_ID id STRING, location_country STRING, gdppercapita_USD DOUBLE, population DOUBLE, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX PopulationDistribution(PRIMARY_ID id STRING, location_country STRING, population DOUBLE, date_year DOUBLE, percentage_males FLOAT, percentage_females FLOAT, percentage_age_0_to_14 FLOAT, percentage_age_15_to_27 FLOAT, percentage_age_25_to_64 FLOAT, percentage_age_65_plus FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX NumberofBanks(PRIMARY_ID id STRING, location_country STRING, number_of_banks DOUBLE, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX TechReadiness(PRIMARY_ID id STRING, location_country STRING, tri_index FLOAT, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX NetworkReadiness(PRIMARY_ID id STRING, location_country STRING, nri_index FLOAT, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX StemOccupationsList(PRIMARY_ID id STRING, occupation_name STRING, occupation_types STRING, date_year DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX AStemMentorLocator(PRIMARY_ID id STRING, location_country STRING, education_teaching_level STRING, gender STRING, age STRING, date_year DOUBLE, stem_occupations_in_thousands DOUBLE, stem_occupations_as_a_percentage_of_employment DOUBLE, percentage_female_share_of_stem_occupations DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX BStemMenteeLocator(PRIMARY_ID id STRING, location_country STRING, date_year DOUBLE, stem_percent_female_graduates DOUBLE, percentage_female_share_of_stem_occupations DOUBLE, stem_women_group STRING, stem_category STRING) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX CStemOpportunitiesConnect(PRIMARY_ID id STRING, location_country STRING, gdppercapita_USD DOUBLE, population DOUBLE, date_year DOUBLE, tri_index FLOAT, nri_index FLOAT, number_of_banks DOUBLE, stem_women_group STRING, stem_category STRING, stem_occupations_in_thousands DOUBLE, stem_occupations_as_a_percentage_of_employment DOUBLE, percentage_female_share_of_stem_occupations DOUBLE) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE VERTEX DSdgOpportunitiesWomenConnect(PRIMARY_ID id STRING, location_country STRING, gdppercapita_USD DOUBLE, population DOUBLE, date_year DOUBLE, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT, gross_enrolment_ratio_tertiary_both_sexes_percent FLOAT, proportion_of_youth_and_adults_with_information_tech_skills_percent FLOAT, legal_frameworks_that_promote_enforce_and_monitor_gender_equality_percentage_of_achievement FLOAT, proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT, access_to_clean_fuels_and_technologies_for_cooking_as_percent_of_population FLOAT, improved_water_source_percent_of_population_with_access FLOAT, improved_sanitation_facilities_as_percent_of_population_with_access FLOAT, access_to_electricity_as_percent_of_population FLOAT, number_of_banks DOUBLE, name_of_ngo STRING, location_city STRING, name_of_organization STRING, region STRING, percentage_females FLOAT) WITH STATS="OUTDEGREE_BY_EDGETYPE", PRIMARY_ID_AS_ATTRIBUTE="true"
+CREATE DIRECTED EDGE for_each_year(FROM Teachers, TO Year)
+CREATE DIRECTED EDGE for_percent_femalepopulation(FROM PercentFemalePopulation, TO Year)
+CREATE DIRECTED EDGE for_city(FROM NgosForWomen, TO City)
+CREATE DIRECTED EDGE from_ngos_forwomen(FROM StemWomenOrganization, TO NgosForWomen)
+CREATE DIRECTED EDGE each_year(FROM EcosocRegisteredNgosForWomen, TO Year)
+CREATE DIRECTED EDGE each_category(FROM StemWomenOrganization, TO StemWomenJobsCategory)
+CREATE DIRECTED EDGE specific_year(FROM SdgGoalAccesstoResources, TO Year)
+CREATE DIRECTED EDGE unique_year(FROM SdgGoalPercentEnrollmentRatioTetiary, TO Year)
+CREATE DIRECTED EDGE particular_year(FROM SdgPercentProportionwithICTSkills, TO Year)
+CREATE DIRECTED EDGE forfrom_year(FROM SdgPercentofLegalsupportforGenderEquality, TO Year)
+CREATE DIRECTED EDGE from_sdg_mobilephone(FROM SdgProportionofFemalewithMobilephone, TO SdgProportionwithMobilephones)
+CREATE DIRECTED EDGE forphone_fromyear(FROM SdgProportionwithMobilephones, TO Year)
+CREATE DIRECTED EDGE per_singlecountry_fromlegislative(FROM SdgeLegislativesupportGenderequalityWomenempower, TO Countrysinglevalues)
+CREATE DIRECTED EDGE fromsinglecountry_peryear(FROM Countrysinglevalues, TO Year)
+CREATE DIRECTED EDGE from_year(FROM StemPercentFemaleTetiaryGrads, TO Year)
+CREATE DIRECTED EDGE per_year_for_multicountry(FROM Year, TO Countrymultivalues)
+CREATE DIRECTED EDGE fromeach_singlecountry(FROM StemJobsdistribution, TO Countrysinglevalues)
+CREATE DIRECTED EDGE from_stemjobs(FROM PercentofStemFemaleJobs, TO StemJobsdistribution)
+CREATE DIRECTED EDGE demofrom_singlecountry(FROM CountryDemographics, TO Countrysinglevalues)
+CREATE DIRECTED EDGE demo_for_year(FROM CountryDemographics, TO Year)
+CREATE DIRECTED EDGE popdistr_fromsinglecountry(FROM PopulationDistribution, TO Countrysinglevalues)
+CREATE DIRECTED EDGE popdistr_peryear(FROM PopulationDistribution, TO Year)
+CREATE DIRECTED EDGE from_popdistri(FROM PercentFemalePopulation, TO PopulationDistribution)
+CREATE DIRECTED EDGE banksnum_forsinglecountry(FROM NumberofBanks, TO Countrysinglevalues)
+CREATE DIRECTED EDGE banksnum_foryear(FROM NumberofBanks, TO Year)
+CREATE DIRECTED EDGE from_womenngo_city(FROM City, TO Countrymultivalues)
+CREATE DIRECTED EDGE fromngowomen_permulticountry(FROM NgosForWomen, TO Countrymultivalues)
+CREATE DIRECTED EDGE tri_fromsinglecountry(FROM TechReadiness, TO Countrysinglevalues)
+CREATE DIRECTED EDGE tri_peryear(FROM TechReadiness, TO Year)
+CREATE DIRECTED EDGE nri_fromsinglecountry(FROM NetworkReadiness, TO Countrysinglevalues)
+CREATE DIRECTED EDGE nri_peryear(FROM NetworkReadiness, TO Year)
+CREATE DIRECTED EDGE fromlegis_foryear(FROM SdgeLegislativesupportGenderequalityWomenempower, TO Year)
+CREATE UNDIRECTED EDGE mentor_teachers(FROM Teachers, TO AStemMentorLocator)
+CREATE UNDIRECTED EDGE mentor_stem_professionals(FROM StemJobsdistribution, TO AStemMentorLocator)
+CREATE UNDIRECTED EDGE stemf_emalegrad_mentee(FROM StemPercentFemaleTetiaryGrads, TO BStemMenteeLocator)
+CREATE UNDIRECTED EDGE stem_femaleprofess_mentee(FROM PercentofStemFemaleJobs, TO BStemMenteeLocator)
+CREATE UNDIRECTED EDGE stem_womenorganis_mentee(FROM StemWomenOrganization, TO BStemMenteeLocator)
+CREATE UNDIRECTED EDGE demo_stemopportunities(FROM CountryDemographics, TO CStemOpportunitiesConnect)
+CREATE UNDIRECTED EDGE tri_stemopportunities(FROM TechReadiness, TO CStemOpportunitiesConnect)
+CREATE UNDIRECTED EDGE nri_stemopportunities(FROM NetworkReadiness, TO CStemOpportunitiesConnect)
+CREATE UNDIRECTED EDGE stemjobs_stemopportunities(FROM StemJobsdistribution, TO CStemOpportunitiesConnect)
+CREATE UNDIRECTED EDGE banks_stemopportunities(FROM NumberofBanks, TO CStemOpportunitiesConnect)
+CREATE UNDIRECTED EDGE stemgroups_stemopportunities(FROM StemWomenOrganization, TO CStemOpportunitiesConnect)
+CREATE UNDIRECTED EDGE demo_sdgopportunities(FROM CountryDemographics, TO DSdgOpportunitiesWomenConnect)
+CREATE UNDIRECTED EDGE femalemobilephone_sdgopportunities(FROM SdgProportionofFemalewithMobilephone, TO DSdgOpportunitiesWomenConnect)
+CREATE UNDIRECTED EDGE ictskills_sdgopportunities(FROM SdgPercentProportionwithICTSkills, TO DSdgOpportunitiesWomenConnect)
+CREATE UNDIRECTED EDGE enrollmenttetiary_sdgopportunities(FROM SdgGoalPercentEnrollmentRatioTetiary, TO DSdgOpportunitiesWomenConnect)
+CREATE UNDIRECTED EDGE accesstoresources_sdgopportunities(FROM SdgGoalAccesstoResources, TO DSdgOpportunitiesWomenConnect)
+CREATE UNDIRECTED EDGE percentgenderequality_sdgopportunities(FROM DSdgOpportunitiesWomenConnect, TO SdgPercentofLegalsupportforGenderEquality)
+CREATE UNDIRECTED EDGE legisplativesupport_sdgopportunities(FROM DSdgOpportunitiesWomenConnect, TO SdgeLegislativesupportGenderequalityWomenempower)
+CREATE UNDIRECTED EDGE ecosocngo2000_sdgopportunities(FROM EcosocRegisteredNgosForWomen, TO DSdgOpportunitiesWomenConnect)
+CREATE UNDIRECTED EDGE ngoswomen_sdgopportunities(FROM DSdgOpportunitiesWomenConnect, TO NgosForWomen)
+CREATE UNDIRECTED EDGE banks_sdgopportunities(FROM DSdgOpportunitiesWomenConnect, TO NumberofBanks)
+CREATE UNDIRECTED EDGE womenpopulation_sdgopportunites(FROM PercentFemalePopulation, TO DSdgOpportunitiesWomenConnect)
+CREATE UNDIRECTED EDGE stemoccupation_year2022(FROM StemOccupationsList, TO Year)

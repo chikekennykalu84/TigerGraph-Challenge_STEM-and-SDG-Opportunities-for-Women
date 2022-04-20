@@ -1,0 +1,11 @@
+CREATE GRAPH temporary_global_graph(*)
+set exit_on_error = "false"
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_job_AddAttributeIndex_JT8B8XV85X78MVIO {
+ALTER VERTEX StemOccupationsList ADD INDEX occupation_name_g7qbyi3y5h ON (occupation_name);
+ALTER VERTEX StemOccupationsList ADD INDEX occupation_types_o9ngnnrtpcd ON (occupation_types);
+}
+RUN GLOBAL SCHEMA_CHANGE JOB global_schema_change_job_AddAttributeIndex_JT8B8XV85X78MVIO
+use global
+DROP JOB global_schema_change_job_AddAttributeIndex_JT8B8XV85X78MVIO
+set exit_on_error = "true"
+DROP GRAPH temporary_global_graph

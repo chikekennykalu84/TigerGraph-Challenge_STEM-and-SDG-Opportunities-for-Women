@@ -1,0 +1,279 @@
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_692902122 {
+      ALTER VERTEX Location DROP ATTRIBUTE (percentageSTEMFemaleGrads);
+      ALTER VERTEX Date DROP ATTRIBUTE (percentageSTEMFemaleGrads);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1399651049 {
+      ALTER VERTEX Teachers ADD ATTRIBUTE (location_country STRING, education_teaching_level STRING, gender STRING, age STRING, date_year DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1318937116 {
+      ALTER VERTEX PercentFemalePopulation ADD ATTRIBUTE (percentage_females FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_43316136 {
+      ALTER VERTEX Year ADD ATTRIBUTE (date_year DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_724213965 {
+      ALTER VERTEX City ADD ATTRIBUTE (location_city STRING);
+      ALTER VERTEX NgosForWomen ADD ATTRIBUTE (location_country STRING, location_city STRING, name_of_ngo STRING);
+      ALTER VERTEX Countrymultivalues ADD ATTRIBUTE (location_country STRING);
+      ALTER VERTEX Countrysinglevalues ADD ATTRIBUTE (location_country STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_738131176 {
+      ALTER VERTEX StemWomenOrganization ADD ATTRIBUTE (stem_women_group STRING);
+      ALTER VERTEX StemWomenJobsCategory ADD ATTRIBUTE (stem_category STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_237104509 {
+      ALTER VERTEX EcosocRegisteredNgosForWomen ADD ATTRIBUTE (location_country STRING, name_of_organization STRING, region STRING, date_year DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_556348541 {
+      ALTER VERTEX SdgGoalAccesstoResources ADD ATTRIBUTE (location_country STRING, date_year DOUBLE, access_to_clean_fuels_and_technologies_for_cooking_as_percent_of_population FLOAT, improved_water_source_percent_of_population_with_access FLOAT, improved_sanitation_facilities_as_percent_of_population_with_access FLOAT, access_to_electricity_as_percent_of_population FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_75021862 {
+      ALTER VERTEX SdgGoalPercentEnrollmentRatioTetiary ADD ATTRIBUTE (location_country STRING, date_year DOUBLE, gross_enrolment_ratio_tertiary_both_sexes_percent FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_663160005 {
+      ALTER VERTEX SdgPercentProportionwithICTSkills ADD ATTRIBUTE (location_country STRING, date_year DOUBLE, proportion_of_youth_and_adults_with_information_tech_skills_percent FLOAT);
+      ALTER VERTEX SdgPercentofLegalsupportforGenderEquality ADD ATTRIBUTE (location_country STRING, date_year DOUBLE, legal_frameworks_that_promote_enforce_and_monitor_gender_equality_percentage_of_achievement FLOAT);
+      ALTER VERTEX SdgProportionwithMobilephones ADD ATTRIBUTE (location_country STRING, date_year DOUBLE, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_male FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_both_sexes FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_821844008 {
+      ALTER VERTEX SdgeLegislativesupportGenderequalityWomenempower ADD ATTRIBUTE (location_country STRING, date_year DOUBLE, proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_665358679 {
+      ALTER VERTEX PercentFemalePopulation ADD ATTRIBUTE (date_year DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_663600180 {
+      ALTER VERTEX PercentofStemFemaleJobs ADD ATTRIBUTE (location_country STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_713457472 {
+      ALTER VERTEX StemWomenOrganization ADD ATTRIBUTE (location_country STRING);
+      ALTER VERTEX StemWomenJobsCategory ADD ATTRIBUTE (stem_women_group STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1084882419 {
+      ALTER VERTEX StemWomenOrganization ADD ATTRIBUTE (stem_category STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1118980189 {
+      ALTER VERTEX SdgProportionofFemalewithMobilephone ADD ATTRIBUTE (location_country STRING, date_year DOUBLE, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_484844639 {
+      ADD VERTEX StemMentorLocator TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE mentor_teachers TO GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1252004867 {
+      DROP VERTEX StemMentorLocator FROM GRAPH STEM_SDG_For_Women;
+      DROP EDGE mentor_teachers FROM GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1712482886 {
+      ALTER VERTEX AStemMentorLocator ADD ATTRIBUTE (stem_occupations_in_thousands DOUBLE, stem_occupations_as_a_percentage_of_employment DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_9955648 {
+      ADD VERTEX AStemMentorLocator TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE mentor_teachers TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE mentor_stem_professionals TO GRAPH STEM_SDG_For_Women;
+      DROP EDGE per_stemjob_category FROM GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_897092984 {
+      ALTER VERTEX AStemMentorLocator ADD ATTRIBUTE (percentage_female_share_of_stem_occupations DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1719303404 {
+      DROP EDGE mentor_teachers FROM GRAPH STEM_SDG_For_Women;
+      DROP EDGE mentor_stem_professionals FROM GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_548462016 {
+      ADD EDGE mentor_teachers TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE mentor_stem_professionals TO GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_2135724121 {
+      ADD VERTEX BStemMenteeLocator TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE stemf_emalegrad_mentee TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE stem_femaleprofess_mentee TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE stem_womenorganis_mentee TO GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_187317934 {
+      ALTER VERTEX CStemOpportunitiesConnect ADD ATTRIBUTE (location_country STRING, gdppercapita_USD DOUBLE, population DOUBLE, date_year DOUBLE, tri_index FLOAT, nri_index FLOAT, number_of_banks DOUBLE, stem_women_group STRING, stem_category STRING, stem_occupations_in_thousands DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_2131506355 {
+      ALTER VERTEX CStemOpportunitiesConnect ADD ATTRIBUTE (stem_occupations_as_a_percentage_of_employment DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_710724014 {
+      ALTER VERTEX CStemOpportunitiesConnect ADD ATTRIBUTE (percentage_female_share_of_stem_occupations DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_535041734 {
+      ADD VERTEX CStemOpportunitiesConnect TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE demo_stemopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE tri_stemopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE nri_stemopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE stemjobs_stemopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE banks_stemopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE stemgroups_stemopportunities TO GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1278151664 {
+      ADD VERTEX DSdgOpportunitiesWomenConnect TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE demo_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE femalemobilephone_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE ictskills_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE enrollmenttetiary_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE accesstoresources_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE percentgenderequality_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE legisplativesupport_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE ecosocngo2000_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE ngoswomen_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE banks_sdgopportunities TO GRAPH STEM_SDG_For_Women;
+      ADD EDGE womenpopulation_sdgopportunites TO GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1058757030 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (location_country STRING, gdppercapita_USD DOUBLE, population DOUBLE, date_year DOUBLE, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT, gross_enrolment_ratio_tertiary_both_sexes_percent FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1553971117 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (proportion_of_youth_and_adults_with_information_tech_skills_percent FLOAT, legal_frameworks_that_promote_enforce_and_monitor_gender_equality_percentage_of_achievement FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1362590812 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1152407903 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (access_to_clean_fuels_and_technologies_for_cooking_as_percent_of_population FLOAT, improved_water_source_percent_of_population_with_access FLOAT, improved_sanitation_facilities_as_percent_of_population_with_access FLOAT, access_to_electricity_as_percent_of_population FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1971337249 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (number_of_banks DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1730619118 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (name_of_ngo STRING, location_city STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_896462126 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (name_of_organization STRING, region STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1178972815 {
+      ALTER VERTEX DSdgOpportunitiesWomenConnect ADD ATTRIBUTE (percentage_females FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1069091384 {
+      ADD EDGE stemoccupation_year2022 TO GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1432973080 {
+      ALTER VERTEX StemOccupationsList ADD ATTRIBUTE (date_year DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1714698386 {
+      ALTER VERTEX Year ADD ATTRIBUTE (location_country STRING, gdppercapita_USD DOUBLE, population DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_915772965 {
+      ALTER VERTEX Year ADD ATTRIBUTE (gross_enrolment_ratio_tertiary_both_sexes_percent FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_male FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_both_sexes FLOAT, proportion_of_individuals_who_own_a_mobile_telephone_by_gender_percent_of_female FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_325792399 {
+      ALTER VERTEX Year ADD ATTRIBUTE (proportion_of_youth_and_adults_with_information_tech_skills_percent FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_547096703 {
+      ALTER VERTEX Year ADD ATTRIBUTE (number_of_banks DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1718468538 {
+      ALTER VERTEX Year ADD ATTRIBUTE (proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_68941637 {
+      ALTER VERTEX Year ADD ATTRIBUTE (tri_index FLOAT, nri_index FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_237845660 {
+      ALTER VERTEX Year ADD ATTRIBUTE (percentage_males FLOAT, percentage_females FLOAT, percentage_age_0_to_14 FLOAT, percentage_age_15_to_27 FLOAT, percentage_age_25_to_64 FLOAT, percentage_age_65_plus FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_2012249457 {
+      ALTER VERTEX Year ADD ATTRIBUTE (education_teaching_level STRING, gender STRING, age STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1525355099 {
+      ALTER VERTEX Year ADD ATTRIBUTE (legal_frameworks_that_promote_enforce_and_monitor_gender_equality_percentage_of_achievement FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1053027647 {
+      ALTER VERTEX Year ADD ATTRIBUTE (stem_percent_female_graduates DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_2142282297 {
+      ALTER VERTEX Year ADD ATTRIBUTE (occupation_name STRING, occupation_types STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1263470145 {
+      ALTER VERTEX Year ADD ATTRIBUTE (access_to_clean_fuels_and_technologies_for_cooking_as_percent_of_population FLOAT, improved_water_source_percent_of_population_with_access FLOAT, improved_sanitation_facilities_as_percent_of_population_with_access FLOAT, access_to_electricity_as_percent_of_population FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_749527692 {
+      ALTER VERTEX Year ADD ATTRIBUTE (name_of_organization STRING, region STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1994601261 {
+      ALTER VERTEX Countrymultivalues ADD ATTRIBUTE (date_year DOUBLE, location_city STRING, name_of_ngo STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_663444557 {
+      ALTER VERTEX Countrysinglevalues ADD ATTRIBUTE (date_year DOUBLE, gdppercapita_USD DOUBLE, population DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1848660684 {
+      ALTER VERTEX Countrysinglevalues ADD ATTRIBUTE (number_of_banks DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1152325255 {
+      ALTER VERTEX Countrysinglevalues ADD ATTRIBUTE (proportion_of_countries_with_systems_to_manage_gender_equality_and_women_empowerment_percent FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_331051151 {
+      ALTER VERTEX Countrysinglevalues ADD ATTRIBUTE (nri_index FLOAT, tri_index FLOAT, stem_occupations_in_thousands DOUBLE, stem_occupations_as_a_percentage_of_employment DOUBLE, percentage_female_share_of_stem_occupations DOUBLE, stem_tertiary_graduates_in_thousands DOUBLE, tertiary_graduates_of_stem DOUBLE, female_share_of_STEM_tertiary_graduates_in_thousands DOUBLE);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_2005962345 {
+      ALTER VERTEX Countrysinglevalues ADD ATTRIBUTE (percentage_males FLOAT, percentage_females FLOAT, percentage_age_0_to_14 FLOAT, percentage_age_15_to_27 FLOAT, percentage_age_25_to_64 FLOAT, percentage_age_65_plus FLOAT);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1506885639 {
+      DROP EDGE stemoccupation_year2022 FROM GRAPH STEM_SDG_For_Women;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_793073916 {
+      ALTER VERTEX City ADD ATTRIBUTE (date_year DOUBLE, location_country STRING, name_of_ngo STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1264421563 {
+      ALTER VERTEX StemOccupationsList ADD INDEX occupation_name_g7qbyi3y5h ON (occupation_name);
+    }
+

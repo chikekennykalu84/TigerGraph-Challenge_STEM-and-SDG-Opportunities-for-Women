@@ -1,0 +1,8 @@
+CREATE SCHEMA_CHANGE JOB local_schema_change_1356456690 {
+      ADD DIRECTED EDGE countrydemo_from_multicountry(FROM CountryDemographics, TO Countrymultivalues);
+    }
+
+CREATE SCHEMA_CHANGE JOB local_schema_change_1264636711 {
+      DROP EDGE countrydemo_from_multicountry;
+    }
+

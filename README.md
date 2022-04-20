@@ -50,4 +50,33 @@ GLOSSARY
 LIST OF SCHEMA VERTICES
 
 
-
+Year   -   For Date
+Teachers  - For Teachers and Lecturers from Primary to Tetiary across Countries Globally.
+PercentFemalePopulation - Percentage number of Female Population across Countries Globally.
+City  - For Specific Cities amongst selected Countries Globally.
+StemWomenOrganization  -  For the list of STEM Women Ogranastions and NGOs across Countries Globally.
+NgosForWomen  - For the list of Developmental NGOs of Woemn across Countries Globally.
+EcosocRegisteredNgosForWomen  - For the ECOSOC and Registererd Women NGOs (Year 2000) across Countries Globally.
+StemWomenJobsCategory  -  For the list of the Categories and number of STEM Women  jobs across Countries Globally.
+SdgGoalAccesstoResources  -  For the SDG Goal 1 target of access to basic resources across Countries Globally.
+Countrymultivalues - For the list of Countries with specifc Cities in accompanying dataset across Countries Globally.
+SdgGoalPercentEnrollmentRatioTetiary - For the SDG Goal 4 : 4.3 target of enrollment into Tetiary education across Countries Globally.
+SdgPercentProportionwithICTSkills - For the SDG Goal 4 : 4.4A target of youths and adults with ICT skills across Countries Globally.
+SdgPercentofLegalsupportforGenderEquality - For the SDG Goal 5 : 5.1 target of legistlative backing and systems to ensure gender equality Women across Countries Globally.
+SdgProportionwithMobilephones - For the SDG Goal 5 : 5.B1 target of proportion of persons who own mobile phones across Countries Globally.
+SdgProportionofFemalewithMobilephone - For the SDG Goal 5 : 5.B1 target of proportion of females who own mobile phones across Countries Globally.
+Countrysinglevalues - For the list of countries Globally.
+SdgeLegislativesupportGenderequalityWomenempower - For the SDG Goal 5 : 5.C1 target of legistlative support for the economic empowerment of Women across Countries Globally.
+StemPercentFemaleTetiaryGrads - For the number of STEM Female Graduates across Countries Globally.
+StemJobsdistribution - For the distribution of STEM jobs across Countries Globally.
+PercentofStemFemaleJobs - For the distribution of STEM Female jobs across Countries Globally.
+CountryDemographics - Fpr the data related to demographics (population, GDP, etc)across Countries Globally.
+PopulationDistribution - For the population of persons across Countries Globally.
+NumberofBanks - For the number distribution of banks across Countries Globally.
+TechReadiness - For the Technology readiness indices across Countries Globally, as an indication of potential of STEM jobs/opportunities.
+NetworkReadiness - For the Network readiness indices across Countries Globally, as an indication of potential of STEM jobs/opportunities.
+StemOccupationsList - For the list of common STEM occupations type.
+AStemMentorLocator - A combined data network locator of potential STEM Mentors across Countries Globally.
+BStemMenteeLocator - A combined data network locator of potential STEM Mentees across Countries Globally.
+CStemOpportunitiesConnect - A combined data network locator of potential STEM Opportunities/jobs across Countries Globally.
+DSdgOpportunitiesWomenConnect - A combined data network locator of potential SDG Driven Women Opportunities across Countries Globally.

@@ -4,13 +4,13 @@ TOPIC :   Creating STEM Opportunities For Women and Enabling Search for UN SDG F
 
 
 
-OVERVIEW
+#  OVERVIEW
 
 This project resources are for the OneMilion Dollar TigerGraph Challenge. The project was carried out using the GraphStudio interface and the GSQL thereby obtained as expected. This project is a combination of Creating Global STEM Opportunities for Women and also Enabling effective and efficient Global UN SDG Search for Women.
 
 
 
-BUSINESS CHALLENGES/PROBLEM STATEMENTS
+#  BUSINESS CHALLENGES/PROBLEM STATEMENTS
 
 1. Non-availability of a connected repository or database of all Female STEM graduates, Female STEM Practitioners and Female professionals globally, across all countries.
 2. Non-availability of real-time global connected cost effective and mentoring network for STEM female graduates and professionals.
@@ -19,13 +19,13 @@ BUSINESS CHALLENGES/PROBLEM STATEMENTS
 
 
 
-CONCEPT
+#  CONCEPT
 
 The brief conceptual methodology applied is the creation of a singular "network" of connected available data that influences STEM Women Opportunities, SDG Goals and target KPIs. Additionally, influencing factors, socio demographic factors that affect STEM and SDG opportunities can be accessed and analysed individually, comparatively and also in relation to geographical location (i.e Country name) and Date (year of data). This connected available graphical dataset can then be used to effectively connect, inform and transform how opportunities are accessed globally and how insights from such data can be efficiently obtained to drive critical decisions, collaborate more effectively (e.g. Mentorship), efficiently and trigger actions for the development of Women globally and our society.
 
 
 
-PROJECT SOLUTION
+#  PROJECT SOLUTION
 
 A.	Impactfulness :  This connected and available graph database of STEM Female Graduates Female STEM Practitioners and Female professionals globally, across all countries, will ensure that more opportunities are created and made available to Female STEM graduates without the restriction of distance. Furthermore, a lot of cost will be saved by making such information readily available in one shop and can connect Female STEM professional and graduates to opportunities and enable a more effective, efficient Mentoring network need to also boost the opportunities and development of Women in STEM. Also, with respect to similarly the SDG goals search for Women; this connected information of targets data across countries will enable a more robust ad efficient monitoring and follow ups on SDG programs for women and will definitely increase further strengthening of vital Women networks in relation to development and will increase GPD's of countries and build a better society quicker.
 
@@ -37,7 +37,7 @@ D. Applicability:  This work briefly demonstrated TigerGraph's excellent functio
 
 
 
-LIMITATIONS
+#  LIMITATIONS
 
 1.  Lack of updated/consistent SDG and STEM regular data from all countries of the world.
 2.  Unavailability of measurement and monitoring STEM and SDG targets data from all countries of the World.
@@ -47,10 +47,10 @@ LIMITATIONS
 
 
 
-GLOSSARY
+#  GLOSSARY
 
 
-LIST OF SCHEMA VERTICES
+#  LIST OF SCHEMA VERTICES
 
 
 Year   -   For Date

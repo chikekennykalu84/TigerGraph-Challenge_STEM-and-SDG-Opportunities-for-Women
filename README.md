@@ -41,7 +41,7 @@ D. Applicability:  This work briefly demonstrated TigerGraph's excellent functio
 
 1.  Lack of updated/consistent SDG and STEM regular data from all countries of the world.
 2.  Unavailability of measurement and monitoring STEM and SDG targets data from all countries of the World.
-3.  Extra Skills on more diverse tools to demonstarte more real life application of this connected data network system.
+3.  Extra Skills on more diverse tools to demonstrate more real life application of this connected data network system.
 
 
 

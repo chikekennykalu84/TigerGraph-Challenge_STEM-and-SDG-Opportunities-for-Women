@@ -6,7 +6,7 @@ TOPIC :   Creating STEM Opportunities For Women and Enabling Search for UN SDG F
 
 OVERVIEW
 
-This project resourcses are for the OneMilion Dollar TigerGraph Challenge. The project was carried out using the GraphStudio interface and the GSQL thereby obtained as expected. This project is a combination of Creating Global STEM Opportunities for Women and also Enabling effective and efficient Global UN SDG Search for Women.
+This project resources are for the OneMilion Dollar TigerGraph Challenge. The project was carried out using the GraphStudio interface and the GSQL thereby obtained as expected. This project is a combination of Creating Global STEM Opportunities for Women and also Enabling effective and efficient Global UN SDG Search for Women.
 
 
 

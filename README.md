@@ -1,4 +1,4 @@
-# TigerGraph-Challenge_STEM-and-SDG-Opportunities-for-Women
+# TIGERGRAPH-CHALLENGE_STEM & SDG OPPORTUNITIES FOR WOMEN
 TOPIC :   Creating STEM Opportunities For Women and Enabling Search for UN SDG For Women.
 
 

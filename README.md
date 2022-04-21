@@ -65,13 +65,13 @@ PercentFemalePopulation - Percentage number of Female Population across Countrie
 City  - For Specific Cities amongst selected Countries Globally.
 
 
-StemWomenOrganization  -  For the list of STEM Women Ogranastions and NGOs across Countries Globally.
+StemWomenOrganization  -  For the list of STEM Women Ogranisations and NGOs across Countries Globally.
 
 
-NgosForWomen  - For the list of Developmental NGOs of Woemn across Countries Globally.
+NgosForWomen  - For the list of Developmental NGOs of Women across Countries Globally.
 
 
-EcosocRegisteredNgosForWomen  - For the ECOSOC and Registererd Women NGOs (Year 2000) across Countries Globally.
+EcosocRegisteredNgosForWomen  - For the ECOSOC and Registered Women NGOs (Year 2000) across Countries Globally.
 
 
 StemWomenJobsCategory  -  For the list of the Categories and number of STEM Women  jobs across Countries Globally.
@@ -89,7 +89,7 @@ SdgGoalPercentEnrollmentRatioTetiary - For the SDG Goal 4 : 4.3 target of enroll
 SdgPercentProportionwithICTSkills - For the SDG Goal 4 : 4.4A target of youths and adults with ICT skills across Countries Globally.
 
 
-SdgPercentofLegalsupportforGenderEquality - For the SDG Goal 5 : 5.1 target of legistlative backing and systems to ensure gender equality Women across Countries Globally.
+SdgPercentofLegalsupportforGenderEquality - For the SDG Goal 5 : 5.1 target of legistlative backing and systems to ensure gender equality for Women across Countries Globally.
 
 
 SdgProportionwithMobilephones - For the SDG Goal 5 : 5.B1 target of proportion of persons who own mobile phones across Countries Globally.
@@ -122,10 +122,10 @@ PopulationDistribution - For the population of persons across Countries Globally
 NumberofBanks - For the number distribution of banks across Countries Globally.
 
 
-TechReadiness - For the Technology readiness indices across Countries Globally, as an indication of potential of STEM jobs/opportunities.
+TechReadiness - For the Technology readiness indices across Countries Globally, as an indication of the potential of STEM jobs/opportunities.
 
 
-NetworkReadiness - For the Network readiness indices across Countries Globally, as an indication of potential of STEM jobs/opportunities.
+NetworkReadiness - For the Network readiness indices across Countries Globally, as an indication of the potential of STEM jobs/opportunities.
 
 
 StemOccupationsList - For the list of common STEM occupations type.

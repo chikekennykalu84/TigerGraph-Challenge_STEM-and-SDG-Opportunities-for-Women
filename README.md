@@ -113,7 +113,7 @@ StemJobsdistribution - For the distribution of STEM jobs across Countries Global
 PercentofStemFemaleJobs - For the distribution of STEM Female jobs across Countries Globally.
 
 
-CountryDemographics - Fpr the data related to demographics (population, GDP, etc)across Countries Globally.
+CountryDemographics - For the data related to demographics (population, GDP, etc)across Countries Globally.
 
 
 PopulationDistribution - For the population of persons across Countries Globally.

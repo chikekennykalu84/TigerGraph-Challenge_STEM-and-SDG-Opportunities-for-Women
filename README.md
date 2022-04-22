@@ -14,7 +14,7 @@ This project resources are for the OneMilion Dollar TigerGraph Challenge. The pr
 
 1. Non-availability of a connected repository or database of all Female STEM graduates, Female STEM Practitioners and Female professionals globally, across all countries.
 2. Non-availability of real-time global connected cost effective and mentoring network for STEM female graduates and professionals.
-3. Inefficient and lack of connected STEM professionals and graduates to global opportunities across geographical regions.
+3. Inefficient and lack of connected STEM Female professionals and graduates to global opportunities across geographical regions.
 4. Lack of efficient and effective connected informative database of SDG goals, opportunities and sub targets for Women across geographical locations. 
 
 
